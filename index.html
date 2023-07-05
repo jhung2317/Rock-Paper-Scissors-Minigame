@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./resources/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia&effect=fire|neon|outline"
+    />
+    <script
+      src="https://kit.fontawesome.com/4c536a6bd5.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <title>Rock-Paper-Scissors</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">
+        <h1 class="font-effect-neon">Rock, Paper, Scissors!!</h1>
+        <h3>Can you beat the machine?</h3>
+        <p>(First to 5 wins!)</p>
+      </div>
+      <div class="game body">
+        <div class="item box">
+          <button class="rock btn" id="rock">
+            <img src="./resources/rock.svg" alt="rock" />
+          </button>
+        </div>
+        <div class="item box">
+          <button class="paper btn" id="paper">
+            <img src="./resources/paper.svg" alt="paper" />
+          </button>
+        </div>
+        <div class="item box">
+          <button class="scissor btn" id="scissor">
+            <img
+              src="./resources/scissors.svg"
+              alt="scissors"
+            />
+          </button>
+        </div>
+      </div>
+      <div class="results body">
+        <div id="result-player-box" class="result box">
+          <div class="title"><p>You:</p></div>
+          <div class="player-result"></div>
+        </div>
+        <div id="result-computer-box" class="result box">
+          <div class="title"><p>Computer:</p></div>
+          <div class="computer-result"></div>
+        </div>
+      </div>
+      <div class="anounce round">
+        <p id="round-result"></p>
+      </div>
+    </div>
+    <div id="end-alert" class="disappear">
+      <div id="end-desc"></div>
+      <button id="retry-btn"></button>
+    </div>
+
+    <footer>
+      <span>By Jason Hung</span>
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,195 @@
+
+html {
+	background-color: black;
+	color: white;
+	box-sizing: border-box;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.header {
+	text-align: center;
+	font-size: large;
+	font-family: "Sofia";
+}
+
+.result {
+	font-family: "Sofia";
+}
+
+button {
+	border: none;
+	cursor: pointer;
+	transition: transform 150ms ease-in-out;
+	background-color: rgba(0,0,0,0);
+}
+
+@keyframes change-color {
+	0% {background-color: rgba(0,0,0,0);}
+	100% {background-color: hsla(305, 31%, 23%, 1);}
+}
+
+button:hover {
+	transform: scale(1.1);
+	box-shadow: 0 0 20px 1px;
+	animation: change-color 1s; /* duration of color change */
+	animation-play-state: running;
+}
+
+button:active {
+    transform: scale(0.89);
+}
+
+.header h3 {
+	margin-bottom: 6px;
+}
+.header p {
+	margin: 0 0 1rem 0;
+}
+.game {
+	display: flex;
+	width: 60%;
+	margin: auto;
+	justify-content: space-between;
+}
+
+
+.item {
+	border: 2px solid #cfcfcf;
+	padding: .25rem;
+}
+
+.item img{
+	width: 150px;
+}
+
+.title, .player-result, .computer-result {
+	font-size: 1.5rem;
+}
+
+.results {
+	display: flex;
+	width: 60%;
+	margin: auto;
+	justify-content: space-between;
+	margin-top: 2rem;
+	border: 1px solid;
+}
+
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	padding-bottom: 1rem;
+}
+
+
+
+#anchor {
+	text-decoration: none;
+	color: white;
+	padding: 0px 2px;
+	
+}
+
+.fab {
+	transition: transform 0.3s ease-in-out;
+}
+
+.fab:hover {
+	transform: rotate(360deg)scale(1.2);
+}
+
+.anounce.round {
+	width: 60%;
+	margin: auto;
+	margin-top: 2rem;
+	font-size: 1.25rem;
+}
+
+#round-result {
+	text-align: center;
+}
+
+.result.box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	transition: all 0.1s;
+	margin: 0 0.5rem;
+}
+
+.cpu {
+	transform: scale(1.1);
+	background-color: hsla(217, 72%, 41%, 0.955);
+}
+
+
+.playing {
+	transform: scale(1.1);
+	border-color: green;
+	box-shadow: 0 0 1rem green;
+}
+
+
+
+.disappear {
+	display: none !important;
+}
+
+#end-alert {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+#end-desc {
+  font-size: 50px;
+  margin-bottom: 25px;
+}
+
+#retry-btn {
+  display: inline-block;
+  padding: 0.8em 1.4em;
+  border-radius: 0.15em;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #646464;
+  background-color: rgb(245, 245, 245);
+  box-shadow: inset 0 -0.6em 0 -0.35em rgba(0, 0, 0, 0.17);
+  position: relative;
+  margin-top: 25px;
+  opacity: 100%;
+}
+#retry-btn:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+
+@media only screen and (max-width: 480px) {
+
+	.game {
+		display: flex;
+		flex-flow: column;
+		margin: 0;
+		margin: auto;
+		justify-content: center;
+		align-items: center;
+		gap: 0.25rem;
+	}
+	.btn img{
+		max-width: 100px;
+	}
+
+	.result.body {
+		justify-content: center;
+		padding: 0.35rem;
+	}
+
+}
