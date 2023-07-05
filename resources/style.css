@@ -3,7 +3,6 @@ html {
 	background-color: black;
 	color: white;
 	box-sizing: border-box;
-	font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
@@ -76,15 +75,6 @@ button:active {
 	border: 1px solid;
 }
 
-footer {
-	position: fixed;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	text-align: center;
-	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	padding-bottom: 1rem;
-}
 
 
 
@@ -192,4 +182,13 @@ footer {
 		padding: 0.35rem;
 	}
 
+}
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	font-family: "Sofia";
+	padding-bottom: 1rem;
 }
